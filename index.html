@@ -533,31 +533,40 @@ I had the pleasure to work with Alex for a short but rich 12 months period. <br>
 </div>-->
 
 <!-- Mobile Navigation -->
-<button id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm" data-target="#here" data-toggle="modal" type="button">
+<button id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm" data-toggle="modal" data-target="#mobile-nav-modal" type="button">
     <i class="ti-menu"></i>
 </button>
-    <div id="here" class="mobile-nav-wrapper" class="modal-fade">
-        <!-- Avatar 
-        <img src="assets/img/photos/it-avatar-96x96.png" alt="Profile picture" class="img-circle margin-b-30">-->
-        <!-- Nav -->
-        <ul class="nav nav-vertical" class="modal-body">
-            <li><a href="#start">Home</a></li>
-            <li><a href="#resume">Expertise</a></li>
-            <li><a href="#testimonials"><span>Testimonials</span></a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <!-- Social Media -->
-        <div class="margin-t-20" class="modal-footer">
-            <strong class="text-sm">Check our social media!</strong>
-            <ul class="list-inline margin-t-10">
-				<li><a href="https://www.linkedin.com/in/alexbreux/" class="icon icon-xs"><i class="fa fa-linkedin text-muted"></i></a></li>
-				<li><a href="https://github.com/AlexBreuxPro" class="icon icon-xs"><i class="fa fa-github text-muted"></i></a></li>
-            </ul>
+
+<div id="mobile-nav-modal" class="modal fade mobile-nav-wrapper">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Avatar 
+            <img src="assets/img/photos/it-avatar-96x96.png" alt="Profile picture" class="img-circle margin-b-30">-->
+            <!-- Nav -->
+            <div class="modal-body">
+                <ul class="nav nav-vertical">
+                    <li><a href="#start">Home</a></li>
+                    <li><a href="#resume">Expertise</a></li>
+                    <li><a href="#testimonials"><span>Testimonials</span></a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="modal-footer margin-t-20">
+                <strong class="text-sm">Check our social media!</strong>
+                <ul class="list-inline margin-t-10">
+                    <li><a href="https://www.linkedin.com/in/alexbreux/" class="icon icon-xs"><i class="fa fa-linkedin text-muted"></i></a></li>
+                    <li><a href="https://github.com/AlexBreuxPro" class="icon icon-xs"><i class="fa fa-github text-muted"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" data-target="mobile-nav"><i class="fa fa-times"></i></a>
+</div>
 
+<a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" data-dismiss="modal"><i class="fa fa-times"></i></a>
+
+	
 <!-- Ajax Wrapper & Loader -->
 <div id="ajax-modal"></div>
 <div id="ajax-loader"><i class="fa fa-spinner fa-spin"></i></div>
